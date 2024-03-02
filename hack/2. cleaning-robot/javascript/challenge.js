@@ -64,32 +64,23 @@ function cleanRooms(api) {
   for (let r2 = 0; r2 <= 4; r2++) {
     api.move();
   }
-  console.log("dir after cleaning thrid row---", api.getDirection());
 
   api.turnLeft();
   api.move();
   api.turnLeft()
-  console.log("dir now11-----",api.getDirection())
-  console.log("pos------",api.getPosition())
   for(let i=0; i<=3; i++){
     api.move()
   }
-  console.log("POST-----",api.getPosition())
   api.turnLeft();
   api.turnLeft();
   for(let i=0; i<=7; i++){
     api.move()
   }
-  console.log("POSSS----",api.getPosition())
-  console.log("dir---",api.getDirection())
 
   api.turnLeft();
   api.move();
-  console.log("POSSS----",api.getPosition())
-  console.log("dir---",api.getDirection())
   api.turnLeft();
 
-  console.log("DIRRR----",api.getDirection())
   for(let i=0; i<=6; i++){
     api.move()
   }
