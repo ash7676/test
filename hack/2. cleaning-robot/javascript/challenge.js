@@ -31,12 +31,10 @@ function cleanRooms(api) {
 
   // matrix size is  7* 5
 
-  console.log("robot initial position:---", api.getPosition());
-  console.log("robot initial directiion------", api.getDirection());
+
   api.turnLeft();
   api.turnLeft();
-  console.log("robot new directiion------", api.getDirection()); //left
-  console.log("ne dir after mvoing---", api.getPosition());
+
 
   //clean first row
   //DIR= LEFT
@@ -44,13 +42,11 @@ function cleanRooms(api) {
     api.move();
   }
 
-  console.log("position after first row-----", api.getPosition());
   //DIR DOWN -> DIR LEFT
   //CLEAN SECOND ROW
   api.turnLeft(); //DOWN
   api.move();
   api.turnLeft();
-  console.log("dir2=---", api.getDirection());
   for (let r2 = 0; r2 <= 4; r2++) {
     api.move();
   }
